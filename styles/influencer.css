@@ -33,7 +33,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 70px 0px;
-   
+
 }
 
 nav>ul {
@@ -104,8 +104,9 @@ main {
     border-radius: 15px;
     box-shadow: 4px 0px 5px 8px #fff;
 }
+
 /* card style */
-.card-header{
+.card-header {
     color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
@@ -114,37 +115,108 @@ main {
 }
 
 
-.card-container{
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 30px 150px;
 }
+
 .card {
     width: 329px;
     height: 476px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    padding: 17px 15px ;
+    padding: 17px 15px;
 }
-.card img{
+
+.card img {
     width: 100%;
     margin-bottom: 16px;
 }
-.card-title{
+
+.card-title {
     color: #18191F;
     font-size: 1.9rem;
     font-weight: 500;
     margin-bottom: 6px;
 }
-.card-price{
+
+.card-price {
     color: rgba(0, 0, 0, 0.87);
     font-size: 1.4rem;
     font-weight: 400;
 }
-.card-discription{
+
+.card-discription {
     color: #787885;
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+/* features style */
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    gap: 130px;
+}
+
+.features-title {
+    color: #0A0826;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.features-discription {
+    color: #6C6C6C;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.btn-bg{
+    background: #E02C6D;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+}
+
+/* footer style */
+footer{
+    background-color: #0A0826;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0px;
+}
+.footer-title{
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.footer-discription{
+    color: #D9DBE1;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.footer-icon i{
+    margin-right: 16px;
+    margin-top: 17px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+@media screen and (max-width: 576px){
+    nav, .banar-container, .icon-container, .features-container{
+        flex-direction: column;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
 }
